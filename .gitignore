@@ -1,5 +1,8 @@
 /target/
 /.classpath
 /.project
+<<<<<<< HEAD
 /.settings/
 
+=======
+>>>>>>> branch 'master' of https://github.com/bhuism/higrow-to-influxdb.git
