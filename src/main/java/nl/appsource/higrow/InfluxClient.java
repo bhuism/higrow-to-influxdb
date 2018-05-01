@@ -47,11 +47,12 @@ public class InfluxClient {
                     .tag("dev_id", hiGrowMeasurement.getDeviceId())
                     .addField("humidity", hiGrowMeasurement.getHumidity())
                     .addField("moisture", hiGrowMeasurement.getMoisture())
-                    .addField("temperature", hiGrowMeasurement.getTemperature()).build();
+                    .addField("temperature", hiGrowMeasurement.getTemperature())
+                    .build();
 
             influxDB.write(point);
             influxDB.flush();
-            
+
         } finally {
             if (influxDB != null) {
                 try {
